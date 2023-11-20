@@ -1,0 +1,162 @@
+body.abertura{ 
+    background-repeat: no-repeat;
+    background-image: url(3409297.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+header{
+    background-color: rgb(45, 68, 162);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+body.index{
+    background-image: url(3409297.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+.menu li{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline; 
+    margin-right: 20px;  
+}
+a:link{
+    color: rgb(255, 255, 255);
+}
+a:active{
+    color: rgb(255, 255, 255);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+
+
+body.sobre{
+    background-image: url(3409297.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+.menu li{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline; 
+    margin-right: 20px; 
+}
+a:link{
+    color: aliceblue;
+}
+a:active{
+    color: rgb(255, 255, 255);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+
+
+body.servicos{ /*SERVICOS*/
+    background-image: url(3409297.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.menu li{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline; 
+    margin-right: 20px; 
+}
+a:link{
+    color: aliceblue;
+}
+a:active{
+    color: rgb(255, 255, 255);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+body.contato{
+    background-image: url(3409297.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+.menu li{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline; 
+    margin-right: 20px;  
+}
+a:link{
+    color: aliceblue;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}

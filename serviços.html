@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos serviços</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="index">
+    <header>
+        <h1>Mov</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicos">
+            <h1>Nossos Serviços</h1>
+            <p>Qual serviço você deseja?</p>
+
+            <label for="servico">Escolha o serviço:</label>
+<select id="servico" onchange="atualizarOpcoes()">
+    <option value="criacao-site">Criação de site (institucional/pessoal)</option>
+    <option value="sistema-gestao">Desenvolvimento de sistema de gestão empresarial</option>
+    <option value="ecommerce">Desenvolvimento de sistema para e-commerce</option>
+    <option value="atualizacao-conteudo">Atualização de conteúdo do site</option>
+    <option value="atualizacao-estrutura">Atualização de estrutura do site</option>
+    <option value="app-facebook">Criação de aplicativo para Facebook</option>
+    <option value="desenvolvimento-excel">Desenvolvimento de Excel</option>
+    
+</select>
+
+<div id="tabelaPrecos">
+    
+</div>
+
+<script>
+    function atualizarOpcoes() {
+        var servicoSelecionado = document.getElementById("servico").value;
+        var tabelaPrecos = document.getElementById("tabelaPrecos");
+
+        
+        tabelaPrecos.innerHTML = "";
+
+        
+        adicionarTabelaPrecos("Tabela de Preços", servicoSelecionado, tabelaPrecos);
+    }
+
+    function adicionarTabelaPrecos(titulo, servico, elementoPai) {
+        var tabela = document.createElement("table");
+        var cabecalho = tabela.createTHead();
+        var linhaCabecalho = cabecalho.insertRow();
+        var th = document.createElement("th");
+        th.textContent = titulo + " para " + servico;
+        linhaCabecalho.appendChild(th);
+
+        
+        var precos = ["O mais rápido possível", "15 dias", "7 dias"];
+        for (var i = 0; i < precos.length; i++) {
+            var th = document.createElement("th");
+            th.textContent = precos[i];
+            linhaCabecalho.appendChild(th);
+        }
+
+       
+        var detalhes = ["Recursos Gerais"];
+        for (var i = 0; i < detalhes.length; i++) {
+            var linhaDetalhes = tabela.insertRow();
+            var tdDetalhes = document.createElement("td");
+            tdDetalhes.textContent = detalhes[i];
+            linhaDetalhes.appendChild(tdDetalhes);
+
+           
+            var precosFicticios = ["R$ 300,00", "R$ 200,00", "R$ 100,00"];
+            for (var j = 0; j < precosFicticios.length; j++) {
+                var tdPreco = document.createElement("td");
+                tdPreco.textContent = precosFicticios[j];
+                linhaDetalhes.appendChild(tdPreco);
+            }
+        }
+
+        
+        elementoPai.appendChild(tabela);
+    }
+
+   
+    atualizarOpcoes();
+</script>
+                
+                </body>
+    <footer>
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
